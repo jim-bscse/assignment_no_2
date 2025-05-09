@@ -4,45 +4,255 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 2</title>
-    <link rel="stylesheet" href="/styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!--daisyui-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        .inter-font {
+            font-family: "Inter", sans-serif;
+        }
+    </style>
+    
 </head>
-<body>
-    <header class="inter-font gradient-header">
-        <div class="navbar"> <!--navbar container-->
-            <div>
-                <h2 class="inter-italic">Fitness</h2>
+<body class="inter-font">
+    <!--header section-->
+    <header class=" max-w-screen-xl mx-auto px-16 lg:px-28">
+        <div class="navbar ">
+            <div class="flex-1">
+              <a class="btn btn-ghost text-orange-600 text-xl">Fitness</a>
             </div>
-            <div class="menu">
-                <ul class="inter-font menu">
-                    <li>Home</li>
-                    <li>Service</li>
-                    <li>contact</li>
-                    <li>About</li>
-                </ul>
+            <div class="flex-none">
+              <ul class="menu menu-horizontal px-1 border rounded-3xl border-black justify-center">
+                <li><a class="">Home</a></li>
+                <li><a>Service</a></li>
+                <li><a>Contact</a></li>
+                <li><a>About</a></li>
+              </ul>
             </div>
-        </div>
-        <main>
-            <div class="first_main_container">
-                <div class="first_main_paragraph">
-                    <h1 class="heading inter-font">Get body in <br> shape & stay <br> healthy</h1>
-                    <p>
-                        A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!
-                    </p>
-                    <div class="btn-container">
-                        <button class="btn-1">Join Club Now!</button>
-                        <button class="btn-2">Download App</button>
-                    </div>
+          </div>
+
+        <!--1st page-->
+        <div class="flex px-5 ">
+            <div class="grid content-center">
+                <h1 class="text-6xl font-bold">Get body in <br> shape & stay <br> healthy</h1>
+                <br>
+                <p class="w-3/4">
+                    A huge selection of health and fitness content, healthy recipes and transformation  stories to help you get fit and stay fit!
+                </p>
+                <br>
+                <div class="flex gap-x-3">
+                    <button class="btn p-6 rounded-3xl bg-orange-500 text-white">Join Club Now!</button>
+                    <button  class="btn p-6 rounded-3xl border">Download App</button>
                 </div>
-                <div class="first-img">
+            </div>
+            <div class="relative">
+                <div>
                     <img src="/images/Images 2.png" alt="">
                 </div>
+                <!--card-->
+                <div class=" absolute top-80 right-50 flex justify-center items-center bg-white shadow-lg  md:py-2 md:px-10 lg:py-4 rounded-2xl">
+                    <!--card circle-->
+                    <div class="size-11 "><img src="/images/yellow_circle.png" alt=""></div>
+                    <!--car text-->
+                    <div class="ml-5 w-30">
+                        <h2 class="lg:text-2xl font-bold">350+</h2>
+                        <p class="text-gray-500">Video tutorial</p>
+                    </div>
+                </div>
+
+                <!--card-2-->
+                <div class=" absolute top-20 left-50 bg-white shadow-lg  md:py-2 md:px-10 lg:py-4 rounded-2xl w-60">
+                    <h2 class="lg:text-2xl font-bold">500+</h2>
+                    <p class="text-gray-500">Free workout videos</p>
+                </div>
             </div>
-        </main>
+        </div>
     </header>
+    <!--main section-->
+        <main class=" max-w-screen-xl mx-auto px-16 lg:px-28 py-28">
+            <!--habit change-->
+             <div class="text-center">
+                 <!--1st para-->
+                 <div>
+                     <h2 class="font-bold inter-font text-4xl">Change your habits</h2>
+                 <br>
+                 <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or <br> access to a gym </p>  
+                 </div>
+                 <!--2nd para-->
+                 <div class="flex mx-auto py-14 gap-x-20">
+                     <div class="md:w-1/2 lg:w-1/4 p-2 grid ">
+                        <img class="rounded-full" src="/images/image 3.png" alt="">
+                        <br>
+                        <h5 class="font-bold ">Movement</h5>
+                        <p class="text-slate-400">We believe fitness should be accessible to everyone</p>
+                     </div>
+                     <div class="md:w-1/2 lg:w-1/4 p-2 grid "">
+                        <img class="rounded-full" src="/images/Image 2.png" alt="">
+                        <br>
+                        <h5 class="font-bold ">Time</h5>
+                        <p class="text-slate-400">We believe fitness should be accessible to everyone</p>
+                     </div>
+                     <div class="md:w-1/2 lg:w-1/4 p-2 grid ">
+                        <img class="rounded-full" src="/images/image 4.png" alt="">
+                        <br>
+                        <h5 class="font-bold ">Practice</h5>
+                        <p class="text-slate-400">We believe fitness should be accessible to everyone</p>
+                     </div>
+                     <div class="md:w-1/2 lg:w-1/4 p-2 grid ">
+                        <img class="rounded-full" src="/images/image 5.png" alt="">
+                        <br>
+                        <h5 class="font-bold">Weight Loss</h5>
+                        <p class="text-slate-400">We believe fitness should be accessible to everyone</p>
+                     </div>
+                 </div>
+             </div>
+             <!--running cart-->
+             <div class="flex justify-center justify-arround gap-40 px-11 py-11 bg-gray-700 rounded-4xl">
+                <!--text-->
+                <div class="flex flex-col justify-center">
+                    <h1 class="font-bold text-4xl text-white">Run an Extra <br>
+                        Mile Easily
+                    </h1>
+                    <br>
+                    <p class="text-slate-400">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts</p>
+                    <br>
+                    <div><button  class="btn px-10 rounded-3xl bg-orange-500 text-white">Join Now</button></div>
+                </div>
 
-    <main>
+                <!--img-->
+                <div>
+                    <img class="rounded-3xl" src="/images/run.jpg" alt="">
+                </div>
+             </div>
+        </main>
+        <!--section-->
 
-    </main>
+        <section class=" max-w-screen-xl mx-auto px-16 lg:px-28 py-28">
+            <!--descript..-->
+            <div class="container mx-auto p-6">
+                <!-- habijabi -->
+                <h1 class="text-3xl font-bold mb-2">Trainings and Exercises</h1>
+                <p class="mb-14 max-w-2xl ">
+                  We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.
+                </p>
+              
+                <!-- Pic grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+                  <!-- Item-1 -->
+                  <div class="relative group overflow-hidden">
+                    <img src="/images/exercise6.jpg"  alt="" class=" h-64 object-cover">
+                    <div class="absolute inset-0 bg-blue-500 bg-opacity-40 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                      <span class="text-white font-bold text-xl">Leg Press</span>
+                    </div>
+                  </div>
+              
+                  <!-- Item2 -->
+                  <div class="relative group overflow-hidden">
+                    <img src="/images/exercise5.jpg" alt=""  class="  h-64 object-cover">
+                    <div class="absolute inset-0 bg-red-500 bg-opacity-40 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                      <span class="text-white font-bold text-xl">Squats</span>
+                    </div>
+                  </div>
+              
+                  <!-- Item 3 -->
+                  <div class="relative group overflow-hidden">
+                    <img src="/images/exercise4.png" alt="" class=" h-64 object-cover">
+                    <div class="absolute inset-0 bg-green-500 bg-opacity-40 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                      <span class="text-white font-bold text-xl">Deadlifts</span>
+                    </div>
+                  </div>
+              
+                  <!-- Sec row -->
+                  <!-- Item 4 -->
+                  <div class="relative group overflow-hidden">
+                    <img src="/images/exercise3.png" alt="" class=" h-64 object-cover">
+                    <div class="absolute inset-0 bg-purple-500 bg-opacity-40 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                      <span class="text-white font-bold text-xl">Bench Press</span>
+                    </div>
+                  </div>
+              
+                  <!-- Item 5 -->
+                  <div class="relative group overflow-hidden">
+                    <img src="/images/exercise2.png" alt="" class=" h-64 object-cover">
+                    <div class="absolute inset-0 bg-yellow-500 bg-opacity-40 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                      <span class="text-white font-bold text-xl">Pull Ups</span>
+                    </div>
+                  </div>
+              
+                  <!-- Item 6 -->
+                  <div class="relative group overflow-hidden">
+                    <img src="/images/exercise1.jpg" alt="" class=" h-64 object-cover">
+                    <div class="absolute inset-0 bg-pink-500 bg-opacity-40 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                      <span class="text-white font-bold text-xl">Lunges</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="text-center grid w-full mt-20 ">
+                <h1 class="text-3xl font-bold ">BMI Calculator</h1>
+                <p class="mb-14  ">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+            </div>
+
+            <!-- workouts -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <!--Item 1-->
+                <div class="relative group overflow-hidden rounded-xl">
+                  <img src="/images/trainer1.png" alt="" class="w-full h-64 object-cover">
+                 <div class="absolute flex items-center justify-center">
+                    <span class="text-white font-bold text-xl">Leg Press</span>
+                  </div>
+                </div>
+            
+                <!-- Item 2 -->
+                <div class="relative group overflow-hidden rounded-xl">
+                  <img src="/images/trainer2.png" alt="" class="w-full h-64 object-cover">
+                 <div class="absolute flex items-center justify-center">
+                    <span class="text-white font-bold text-xl">Squats</span>
+                  </div>
+                </div>
+            
+                <!--Item 3 -->
+                <div class="relative group overflow-hidden rounded-xl">
+                  <img src="/images/trainer3.png" alt="" class="w-full h-64 object-cover">
+                 <div class="absolute flex items-center justify-center">
+                    <span class="text-white font-bold text-xl">Deadlifts</span>
+                  </div>
+                </div>
+            
+                <!-- Second row -->
+                <!-- Item 4 -->
+                <div class="relative group overflow-hidden rounded-xl">
+                  <img src="/images/trainer4.png" alt="" class="w-full h-64 object-cover">
+                 <div class="absolute flex items-center justify-center">
+                    <span class="text-white font-bold text-xl">Bench Press</span>
+                  </div>
+                </div>
+            
+                <!-- Item 5 -->
+                <div class="relative group overflow-hidden rounded-xl">
+                  <img src="/images/image 5.png" alt="" class="w-full h-64 object-cover">
+                 <div class="absolute flex items-center justify-center">
+                    <span class="text-white font-bold text-xl">Pull Ups</span>
+                  </div>
+                </div>
+            
+                <!-- Item 6 -->
+                <div class="relative group overflow-hidden rounded-xl">
+                  <img src="/images/trainer6.png" alt="" class="w-full h-64 object-cover">
+                  <div class="absolute flex items-center justify-center">
+                    <span class="text-white font-bold text-xl">Theresa Webb</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
 
     <footer>
 

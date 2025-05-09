@@ -12,12 +12,44 @@
 .menu{
     list-style: none;
     display: flex;
-    column-gap: 3rem;
+    column-gap: 2rem;
     color: white;
-    border-radius: 16px;
     align-items: center;
+    padding-left: 2px;
+    padding-right: 20px;
+    border: 1px solid white;
+    border-radius: 24px;
 }
 
+.stats-item {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    height: 96px;
+    width: 206px;
+    background: transparent;
+    border: 1px solid #E6533C;
+    border-radius: 12px;
+    padding: 15px;
+  }
+  
+  .number {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .label {
+    font-size: 16px;
+    color: gainsboro;
+    margin-top: 8px;
+  }
+
+button{
+    background: #E6533C;
+    padding: 10px;
+    border-radius: 24px;
+
+}
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -26,6 +58,15 @@
     padding-right: 6rem;
 }
 
+ nav {
+            padding: 10px;
+        }
+        nav a {
+            padding: 100px;
+            display: inline-block;
+            margin-right: 15px;
+            text-decoration: none
+        }
 .gradient-header{
     background: linear-gradient(to bottom, #111111, #777777);
 }
@@ -69,6 +110,7 @@ p{
     color: white;
     border: none;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .btn-2{
@@ -82,4 +124,6 @@ p{
     color: white;
     border: 1px solid white;
     font-size: 1rem;
+    cursor: pointer;
+
 }
